@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recomendaciones Green Sense</title>
+    <link rel="stylesheet" href="../styles/recomendaciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="pageName">
+        <h1>Recomendaciones</h1>
+      </section>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        </label>
+        <ul class="ul">
+          <li><a class="texta" href="#">Inicio</a></li>
+          <li><a class="texta" href="#">Jardinerito</a></li>
+          <li>
+            <a class="texta" href="./recomendaciones.html">Recomendaciones</a>
+          </li>
+          <li><a class="texta" href="./tienda.html">Tienda</a></li>
+          <li><a class="texta" href="./soporte.html">Soporte</a></li>
+          <li><a class="imgPerfil" href="./login.html"></a></li>
+          <li><a class="imgCarrito" href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>
+        Si tienes una variedad de plantas y deseas aprender más sobre cómo
+        cuidarlas, aquí te ofrecemos una selección que seguramente te resultará
+        de interés.
+      </p>
+      <div class="container">
+        <div class="planta" id="p1">CARNIVORA</div>
+        <div class="planta" id="p2">ORQUÍDEA</div>
+        <div class="planta" id="p3">PLATANERA</div>
+        <div class="planta" id="p4">CAFETO</div>
+        <div class="planta" id="p5">LÍRIOS</div>
+        <div class="planta" id="p6">FRUTALES</div>
+      </div>
+    </main>
+    <footer>
+      <nav class="footer-nav">
+        <h4>WEBSITE LINKS</h4>
+        <ul class="nav_f">
+          <li class="Footer-nav__item">
+            <a href=""> Jardinerito</a>
+          </li>
+          <li class="Footer-nav__item">
+            <a href="../html/recomendaciones.html"> Recomendaciones </a>
+          </li>
+          <li class="Footer-nav__item">
+            <a href="../html/tienda.html"> Tienda </a>
+          </li>
+          <li class="Footer-nav__item">
+            <a href="../html/soporte.html"> Soporte </a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="footer-obj">
+        <img src="../img/Logofooter.png" alt="logo" />
+      </figure>
+
+      <aside class="footer-contacto">
+        <a href="https://wa.me/573194972886" target="_blank " rel="noopener"
+          ><img src="../img/whatsapp.png" alt="logo whatsapp"
+        /></a>
+        <a href="https://wa.me/573194972886" target="_blank " rel="noopener"
+          >Whatsapp</a
+        >
+
+        <a
+          href="https://maps.app.goo.gl/bL21gFBnBovazLk16"
+          target="_blank "
+          rel="noopener"
+          ><img src="../img/ubicacion.png" alt="logo mapa"
+        /></a>
+        <a
+          href="https://maps.app.goo.gl/bL21gFBnBovazLk16"
+          target="_blank "
+          rel="noopener"
+          >Bogota, Colombia</a
+        >
+
+        <a href="mailto:pachon.paula1@gmail.com" target="_blank " rel="noopener"
+          ><img src="../img/mail.png" alt="Correo"
+        /></a>
+        <a href="mailto:pachon.paula1@gmail.com" target="_blank " rel="noopener"
+          >soporte.greensense@gmail.com</a
+        >
+      </aside>
+    </footer>
+    <script>
+      document.getElementById("check").addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.add("no-scroll");
+        } else {
+          document.body.classList.remove("no-scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
