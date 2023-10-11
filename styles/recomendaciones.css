@@ -188,6 +188,10 @@
     color: snow;
     font-weight: bolder;
   }
+
+  .planta a{
+    color: snow;
+  }
   
   .container #p1 {
     background-image: linear-gradient(
