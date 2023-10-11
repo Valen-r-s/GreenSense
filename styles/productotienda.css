@@ -54,10 +54,10 @@
   }
   
   .navbar .ul {
-    display: flex; 
-    justify-content: space-evenly;
-    align-items: center; 
-    width: 100%; 
+    display: flex; /* Hace que ul sea un contenedor flex */
+    justify-content: space-evenly; /* Espacia los elementos de manera uniforme */
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 100%; /* Establece el ancho del ul al 100% del contenedor padre */
     margin: 0 auto;
   }
   
@@ -115,7 +115,7 @@
   }
   
   @media (max-width: 858px) {
-
+  
     h1{
       font-size: 40px;
       }
@@ -159,154 +159,87 @@
       left: 0;
     }
   }
-  
-  p {
-    font-weight: bold;
-    margin: 30px 0em;
-    font-size: 25px;
-    align-items: center;
+
+/*Main*/
+
+.titulo_pro {
+    margin: 15px auto;
+    width:80%;
+    background-color: white;
+    color: #273f21;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    display: flex;   
+    align-items: center; 
+    height: 50px;
+}
+
+.titulo_pro h2 {
+    margin-left: 20px;
+}
+
+.descrpcion-pro {
+    height: 320px;
+    display: flex;
+    margin: auto 110px;
+    justify-content: space-evenly;
+}
+
+.Producto {
+    background-color: white;
+    display: flex;
     justify-content: center;
-    text-align: center;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .planta {
-    background-color: #e5e5e5;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
+}
+
+.descripcion {
+    margin: 0px 10px;
+    background-color: white;
+    color: #273f21;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+.precio {
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.botonañadir {
+    margin-top: 20px;
     border-radius: 20px;
-    cursor: pointer;
-    flex: 1 0 calc(33.3333% - 20px); /* Se resta 20px por el margen de la planta */
-      margin: 10px;
-    padding: 70px 10px;
+    padding: 8px 12px;
+    background-color: #3f5f34;
     color: snow;
-    font-weight: bolder;
-  }
-  
-  .container #p1 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/carnivora.png);
-    background-size: cover;
-  }
-  
-  #p1:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/carnivora.png);
-  }
-  
-  .container #p2 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/orquidea.jpg);
-    background-size: cover;
-  }
-  
-  #p2:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/orquidea.jpg);
-  }
-  
-  .container #p3 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/platanera.jpg);
-    background-size: cover;
-  }
-  
-  #p3:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/platanera.jpg);
-  }
-  
-  .container #p4 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/cafetoo.jpg);
-    background-size: cover;
-  }
-  
-  #p4:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/cafetoo.jpg);
-  }
-  
-  .container #p5 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/lirios.jpg);
-    background-size: cover;
-  }
-  
-  #p5:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/lirios.jpg);
-  }
-  .container #p6 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/frutales.jpg);
-    background-size: cover;
-  }
-  
-  #p6:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/frutales.jpg);
-  }
-  
-  /* /footer/ */
-  
-  footer {
+    border: none;
+    cursor: pointer;
+}
+
+.botonañadir:hover {
+    background-color: #06460f;
+}
+
+.botonvolver {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 20px 8em;
+    left: 1050px;
+    background-color: #3f5f34;
+    color: snow;
+    border: none;
+    cursor: pointer;
+}
+
+.botonvolver:hover {
+    background-color: #06460f;
+}
+
+
+ /* /footer/ */
+
+ footer {
     display: flex;
-    margin: 60px 0 0 0;
+    margin: 20px 0 0 0;
     background-color: #f6f9f5;
     justify-content: space-between;
   }
@@ -405,4 +338,3 @@
       font-size: 14px;
     }
   }
-  

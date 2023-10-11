@@ -55,10 +55,11 @@
   
   .navbar .ul {
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center; 
     width: 100%; 
     margin: 0 auto;
+    z-index: 10;
   }
   
   .navbar .ul li {
@@ -115,11 +116,9 @@
   }
   
   @media (max-width: 858px) {
-
     h1{
-      font-size: 40px;
-      }
-  
+        font-size: 40px;
+        }
     .texta {
       font-size: 16px;
     }
@@ -159,152 +158,120 @@
       left: 0;
     }
   }
-  
-  p {
+
+.text1{
+    border-style: double;
     font-weight: bold;
-    margin: 30px 0em;
-    font-size: 25px;
+    margin: 50px 10em;
+    padding: 25px;
+    font-size: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    text-align:center;
+}
+
+h2{
+    color: #2C4526;
+    margin: 30px 5em;
+}
+
+.grids{
+display: flex;
+justify-content: center;
+margin: 0 40px;
+}
+
+.layout {
     text-align: center;
-  }
-  
-  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .planta {
-    background-color: #e5e5e5;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
+}
+
+.layout > div {
+    margin: 10px;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.opciones {
+    width: 350px;
+    height:70px;
     border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: snow;
+    border: none;
     cursor: pointer;
-    flex: 1 0 calc(33.3333% - 20px); /* Se resta 20px por el margen de la planta */
-      margin: 10px;
-    padding: 70px 10px;
-    color: snow;
-    font-weight: bolder;
-  }
-  
-  .container #p1 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/carnivora.png);
-    background-size: cover;
-  }
-  
-  #p1:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/carnivora.png);
-  }
-  
-  .container #p2 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/orquidea.jpg);
-    background-size: cover;
-  }
-  
-  #p2:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/orquidea.jpg);
-  }
-  
-  .container #p3 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/platanera.jpg);
-    background-size: cover;
-  }
-  
-  #p3:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/platanera.jpg);
-  }
-  
-  .container #p4 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/cafetoo.jpg);
-    background-size: cover;
-  }
-  
-  #p4:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/cafetoo.jpg);
-  }
-  
-  .container #p5 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/lirios.jpg);
-    background-size: cover;
-  }
-  
-  #p5:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/lirios.jpg);
-  }
-  .container #p6 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0.432) 0%
-      ),
-      url(../img/frutales.jpg);
-    background-size: cover;
-  }
-  
-  #p6:hover {
-    background-image: linear-gradient(
-        90deg,
-        rgba(68, 121, 9, 1) 0%,
-        rgba(35, 121, 9, 0) 0%
-      ),
-      url(../img/frutales.jpg);
-  }
-  
-  /* /footer/ */
-  
-  footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input[type="radio"]:checked + .opciones {
+    background-color: #6C9C5B;
+}
+
+@media (max-width: 858px) {
+    .layout {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 ;
+    }
+
+    .layout > div {
+        margin: 10px 0; 
+    }
+}
+
+.text2{
+    font-weight: bold;
+    margin: 30px 5em;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+button[name="soporte"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #3F5F34;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button[name="soporte"]:hover {
+    background-color: #06460F;
+}
+
+
+ /* /footer/ */
+ footer {
     display: flex;
     margin: 60px 0 0 0;
     background-color: #f6f9f5;
@@ -362,6 +329,7 @@
   .footer-contacto img {
     width: 20px;
   }
+  
   
   @media (max-width: 600px) {
     .container {
