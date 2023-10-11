@@ -1,40 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuestra tienda</title>
+    <title>Tienda Green Sense</title>
+    <link rel="stylesheet" href="../styles/productotienda.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="../styles/productotienda.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" />
   </head>
   <body>
     <header>
       <section class="pageName">
-        <h1>Nuestra tienda</h1>
+        <h1>Recomendaciones</h1>
       </section>
-      <section class="menu">
-        <nav class="nav">
-          <a class="texta" href="#">Inicio</a>
-          <a class="texta" href="#">Jardinerito</a>
-          <a class="texta" href="./recomendaciones.html">Recomendaciones</a>
-          <a class="texta" href="./tienda.html">Tienda</a>
-          <a class="texta" href="./soporte.html">Soporte</a>
-          <a class="imgPerfil" href="#"></a>
-          <a class="imgCarrito" href="#"></a>
-        </nav>
-      </section>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        </label>
+        <ul class="ul">
+          <li><a class="texta" href="#">Inicio</a></li>
+          <li><a class="texta" href="#">Jardinerito</a></li>
+          <li>
+            <a class="texta" href="./recomendaciones.html">Recomendaciones</a>
+          </li>
+          <li><a class="texta" href="./tienda.html">Tienda</a></li>
+          <li><a class="texta" href="./soporte.html">Soporte</a></li>
+          <li><a class="imgPerfil" href="./login.html"></a></li>
+          <li><a class="imgCarrito" href="#"></a></li>
+        </ul>
+      </nav>
     </header>
-
     <main>
       <section class="titulo_pro">
         <h2>Jardinero jardinerita</h2>
       </section>
 
-      <section class="descrpcion-pro">
+      <div class="descrpcion-pro">
         <figure class="Producto">
           <img src="/img/ProductoNina.jpg" alt="Foto del producto" />
         </figure>
@@ -43,27 +48,6 @@
           <h3>Precio</h3>
 
           <p class="precio">$150.000</p>
-
-          <!-- <h3>Cantidad</h3>
-
-          <div class="contador-añadir">
-            <div class="cantidad">
-              <input
-                type="text"
-                value="0"
-                class="form-control"
-                id="clicks"
-                name="clicks"
-                minlength="1"
-                maxlength="300"
-                required
-              /><br />
-              <div class="sumar" id="bote" onClick="clickME()" ;>+</div>
-              <div class="restar" id="boty" onClick="clickME2();">-</div>
-            </div>
-
-            
-          </div> -->
 
           <h3>Descripción</h3>
           <p>
@@ -81,9 +65,9 @@
             <button class="botonañadir">+ Añadir al carrito</button>
           </a>
         </article>
-      </section>
+      </div>
       <div>
-        <a href="./tienda.html"><button class="botonvolver">volver</button></a>
+        <a href="./tienda.html"><button class="botonvolver">Volver</button></a>
       </div>
     </main>
 
@@ -141,5 +125,14 @@
         >
       </aside>
     </footer>
+    <script>
+      document.getElementById("check").addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.add("no-scroll");
+        } else {
+          document.body.classList.remove("no-scroll");
+        }
+      });
+    </script>
   </body>
 </html>
