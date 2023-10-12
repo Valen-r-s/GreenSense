@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Green Sense</title>
-    <link rel="stylesheet" href="../styles/productotienda.css" />
+    <title>Nuestra tienda</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      type="text/css"
+      href="../styles/productotienda.css"
     />
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
   </head>
   <body>
     <header>
       <section class="pageName">
-        <h1>Recomendaciones</h1>
+        <h1>Nuestra Tienda</h1>
       </section>
       <nav class="navbar">
         <input type="checkbox" id="check" />
@@ -22,30 +26,54 @@
           <i class="fa-solid fa-bars" style="color: #ffffff"></i>
         </label>
         <ul class="ul">
-          <li><a class="texta" href="../html/inicio.html">Inicio</a></li>
+          <li><a class="texta" href="#">Inicio</a></li>
+          <li><a class="texta" href="#">Jardinerito</a></li>
           <li>
             <a class="texta" href="./recomendaciones.html">Recomendaciones</a>
           </li>
           <li><a class="texta" href="./tienda.html">Tienda</a></li>
           <li><a class="texta" href="./soporte.html">Soporte</a></li>
           <li><a class="imgPerfil" href="./login.html"></a></li>
+          <li><a class="imgCarrito" href="#"></a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="titulo_pro">
-        <h2>Jardinero jardinerita</h2>
+        <h2>Jardinero jardinera</h2>
       </section>
 
-      <div class="descrpcion-pro">
+      <section class="descrpcion-pro">
         <figure class="Producto">
-          <img src="../img/ProductoNina.jpg" alt="Foto del producto" />
+          <img src="/img/ProductoNina.jpg" alt="Foto del producto" />
         </figure>
 
         <article class="descripcion">
           <h3>Precio</h3>
 
           <p class="precio">$150.000</p>
+
+          <!-- <h3>Cantidad</h3>
+
+          <div class="contador-añadir">
+            <div class="cantidad">
+              <input
+                type="text"
+                value="0"
+                class="form-control"
+                id="clicks"
+                name="clicks"
+                minlength="1"
+                maxlength="300"
+                required
+              /><br />
+              <div class="sumar" id="bote" onClick="clickME()" ;>+</div>
+              <div class="restar" id="boty" onClick="clickME2();">-</div>
+            </div>
+
+            
+          </div> -->
 
           <h3>Descripción</h3>
           <p>
@@ -59,13 +87,13 @@
           <h3>Dimensiones</h3>
 
           <p>18cm x 6cm x 4cm</p>
-          <a href="../html/carritojardi.html">
+          <a href="./carritojardi.html">
             <button class="botonañadir">+ Añadir al carrito</button>
           </a>
         </article>
-      </div>
+      </section>
       <div>
-        <a href="./tienda.html"><button class="botonvolver">Volver</button></a>
+        <a href="./tienda.html"><button class="botonvolver">volver</button></a>
       </div>
     </main>
 
@@ -76,16 +104,16 @@
         <h4>WEBSITE LINKS</h4>
         <ul class="nav_f">
           <li class="Footer-nav__item">
-            <a href=""> Jardinerito</a>
+            <a href="./inicio.html">Inicio</a>
           </li>
           <li class="Footer-nav__item">
-            <a href=""> Funcionamiento </a>
+            <a href="./recomendaciones.html">Recomendaciones</a>
           </li>
           <li class="Footer-nav__item">
-            <a href=""> Recomendaciones </a>
+            <a href="./tienda.html">Tienda</a>
           </li>
           <li class="Footer-nav__item">
-            <a href=""> tienda </a>
+            <a href="./soporte.html">Soporte</a>
           </li>
         </ul>
       </nav>

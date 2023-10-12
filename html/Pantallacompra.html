@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantalla de compra</title>
+    <link rel="stylesheet" href="../styles/compra.css" />
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="pageName">
+        <h1>Nuestra Tienda</h1>
+      </section>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        </label>
+        <ul class="ul">
+          <li><a class="texta" href="#">Inicio</a></li>
+          <li><a class="texta" href="#">Jardinerito</a></li>
+          <li>
+            <a class="texta" href="./recomendaciones.html">Recomendaciones</a>
+          </li>
+          <li><a class="texta" href="./tienda.html">Tienda</a></li>
+          <li><a class="texta" href="./soporte.html">Soporte</a></li>
+          <li><a class="imgPerfil" href="./login.html"></a></li>
+          <li><a class="imgCarrito" href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="api">
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+        <form id="form-checkout" action="/process_payment" method="post">
+          <div>
+            <div>
+              <label for="payerFirstName">Nombre</label>
+              <input
+                id="form-checkout__payerFirstName"
+                name="payerFirstName"
+                type="text"
+              />
+            </div>
+            <div>
+              <label for="payerLastName">Appelido</label>
+              <input
+                id="form-checkout__payerLastName"
+                name="payerLastName"
+                type="text"
+              />
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input id="form-checkout__email" name="email" type="text" />
+            </div>
+            <div>
+              <label for="identificationType">Tipo de documento</label>
+              <select
+                id="form-checkout__identificationType"
+                name="identificationType"
+                type="text"
+              ></select>
+            </div>
+            <div>
+              <label for="identificationNumber">Número del documento</label>
+              <input
+                id="form-checkout__identificationNumber"
+                name="identificationNumber"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <input
+                type="hidden"
+                name="transactionAmount"
+                id="transactionAmount"
+                value="100"
+              />
+              <input
+                type="hidden"
+                name="description"
+                id="description"
+                value="Nome do Produto"
+              />
+              <br />
+              <button class="pagar" type="submit">Pagar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="seleccion">
+        <figure class="pro">
+          <img src="../img/ProductoMata.jpg" alt="Producto escogido" />
+        </figure>
+        <h3>Jardinerito selecciónado</h3>
+
+        <h4>Total</h4>
+        <a href="../html/verificacion.html"
+        <div class="boton-container">
+          <a href="/html/verificacion.html"><button class="boton">Finalizar compra</button></a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <h4>WEBSITE LINKS</h4>
+        <ul class="nav_f">
+          <li class="Footer-nav__item">
+            <a href=""> Jardinerito</a>
+          </li>
+          <li class="Footer-nav__item">
+            <a href=""> Funcionamiento </a>
+          </li>
+          <li class="Footer-nav__item">
+            <a href=""> Recomendaciones </a>
+          </li>
+          <li class="Footer-nav__item">
+            <a href=""> tienda </a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="footer-obj">
+        <img src="/img/Logofooter.png" alt="logo" />
+      </figure>
+
+      <aside class="footer-contacto">
+        <a href="https://wa.me/573194972886" target="_blank"
+          ><img src="/img/whatsapp.png" alt="logo whatsapp"
+        /></a>
+        <a href="https://wa.me/573194972886" target="_blank">Whatsapp</a>
+
+        <a href="https://maps.app.goo.gl/bL21gFBnBovazLk16" target="_blank"
+          ><img src="/img/ubicacion.png" alt="logo mapa"
+        /></a>
+        <a href="https://maps.app.goo.gl/bL21gFBnBovazLk16" target="_blank"
+          >Bogota, Colombia</a
+        >
+
+        <a href="mailto:pachon.paula1@gmail.com" target="_blank"
+          ><img src="/img/mail.png" alt="Correo"
+        /></a>
+        <a href="mailto:pachon.paula1@gmail.com" target="_blank"
+          >soporte.greensense@gmail.com</a
+        >
+      </aside>
+    </footer>
+    <script>
+      document.getElementById("check").addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.add("no-scroll");
+        } else {
+          document.body.classList.remove("no-scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
