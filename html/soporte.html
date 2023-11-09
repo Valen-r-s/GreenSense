@@ -2,35 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soporte Green Sense</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../styles/soporte.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" />
+    <title>Soporte Green Sense</title>
   </head>
   <body>
     <header>
-      <section class="pageName">
-        <h1>Soporte</h1>
-      </section>
-      <nav class="navbar">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
-        </label>
-        <ul class="ul">
-          <li><a class="texta" href="../html/inicio.html">Inicio</a></li>
-          <li>
-            <a class="texta" href="./recomendaciones.html">Recomendaciones</a>
-          </li>
-          <li><a class="texta" href="./tienda.html">Tienda</a></li>
-          <li><a class="texta" href="./soporte.html">Soporte</a></li>
-          <li><a class="imgPerfil" href="./login.html"></a></li>
+      <nav class="nav">
+        <a href="#"><img class="logo" src="../img/logo.png" alt="logo" /></a>
+
+        <ul class="enlaces-menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./recomendaciones.html">Recomendaciones</a></li>
+          <li><a href="#">Tienda</a></li>
+          <li><a href="./soporte.html">Soporte</a></li>
         </ul>
+
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
       </nav>
     </header>
     <main>
@@ -82,23 +76,25 @@
         Serás redirigido a un asesor que te ayudará a resolver tu problema de
         acuerdo con la información que nos brindaste.
       </div>
-      <button name="soporte" type="submit">Obtener soporte</button>
+      <a href="https://wa.me/573194972886"
+        ><button name="soporte" type="submit">Obtener soporte</button></a
+      >
     </main>
     <footer>
       <nav class="footer-nav">
         <h4>WEBSITE LINKS</h4>
         <ul class="nav_f">
           <li class="Footer-nav__item">
-            <a href=""> Jardinerito</a>
+            <a href="./index.html"> Inicio </a>
           </li>
           <li class="Footer-nav__item">
-            <a href="../html/recomendaciones.html"> Recomendaciones </a>
+            <a href="./recomendaciones.html"> Recomendaciones </a>
           </li>
           <li class="Footer-nav__item">
-            <a href="../html/tienda.html"> Tienda </a>
+            <a href="./tienda.html"> Tienda </a>
           </li>
           <li class="Footer-nav__item">
-            <a href="../html/soporte.html"> Soporte </a>
+            <a href="./soporte.html"> Soporte </a>
           </li>
         </ul>
       </nav>
@@ -136,14 +132,6 @@
         >
       </aside>
     </footer>
-    <script>
-      document.getElementById("check").addEventListener("change", function () {
-        if (this.checked) {
-          document.body.classList.add("no-scroll");
-        } else {
-          document.body.classList.remove("no-scroll");
-        }
-      });
-    </script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
