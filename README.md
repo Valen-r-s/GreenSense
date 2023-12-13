@@ -15,13 +15,6 @@ This responsive webpage is dedicated to showcasing an advanced humidity and temp
 - JavaScript: Implemented for dynamic elements such as the hamburger menu and slider, enhancing the interactivity of the webpage.
 - HTML/CSS: The foundation of the webpage's structure and styling to create an appealing and organized layout.
 
-
-
-## Screenshots
-
-![App Screenshot](https://drive.google.com/file/d/17K3HPTi-ocPxDu6F-V_M9oFoleaFgmXk/view)
-
-
 ## 👩🏼‍💻Authors
 
 - [@Valen-r-s](https://github.com/Valen-r-s)
